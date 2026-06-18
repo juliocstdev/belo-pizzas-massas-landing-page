@@ -1,0 +1,97 @@
+header {
+  min-width: 100%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  align-items: center;
+}
+
+#mobileNavigationLinks,
+#mobileDefaultButton,
+#hamburguer {
+  display: none;
+}
+
+#navigationLinks {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+#navigationLinks .link a {
+  text-decoration: none;
+  color: #322e2d;
+}
+
+#navigationLinks .link:first-child {
+  border-bottom: 2px solid #bf212e;
+  border-radius: 1px;
+}
+
+#defaultButton {
+  padding: 0.5rem 1rem;
+  font-size: small;
+  font-weight: 550;
+  border: none;
+  background-color: #bf212e;
+  border-radius: 0.3rem;
+  color: #fff;
+  box-shadow: -1px -1px 3px #11111154;
+  cursor: pointer;
+}
+
+#menuMobile {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+#mobileNavigationLinks.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  gap: 0.7rem;
+}
+
+#mobileNavigationLinks.active li a {
+  text-decoration: none;
+  color: #322e2d;
+}
+
+#mobileDefaultButton.active {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: small;
+  font-weight: 550;
+  border: none;
+  background-color: #bf212e;
+  border-radius: 0.3rem;
+  color: #fff;
+  box-shadow: -1px -1px 3px #11111154;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1170px) {
+  #navigationLinks,
+  #defaultButton {
+    display: none;
+  }
+
+  #hamburguer {
+    display: block;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    font-weight: bold;
+    color: #322e2d;
+    cursor: pointer;
+  }
+}
