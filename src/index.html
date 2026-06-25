@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/home.css" />
 
     <script src="scripts/script.js" defer></script>
   </head>
@@ -60,10 +61,47 @@
             <a href="#">Avaliações</a>
           </li>
         </ul>
-        <button id="mobileDefaultButton">
-          Faça seu pedido!
-        </button>
+        <button id="mobileDefaultButton">Faça seu pedido!</button>
       </div>
     </header>
+
+    <main id="content">
+      <section id="home">
+        <div id="cta">
+          <h1 id="title">O sabor que reúne todo mundo à <span>mesa</span></h1>
+          <p id="description">
+            Pizzas artesanais, massas preparadas com ingredientes selecionados e
+            um atendimento acolhedor para transformar cada refeição em um
+            momento especial.
+          </p>
+          <div id="ctaBtns">
+            <a href="#">
+              <button id="defaultButton">Ver Cardápio</button>
+            </a>
+            <a href="tel:+5584986396180">
+              <button id="phoneButton">
+                <i class="fa-solid fa-phone"></i>
+                (84) 9 8639-6180
+              </button>
+            </a>
+          </div>
+          <div id="socialMediaButtons">
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div id="banner">
+          <div id="shape"></div>
+          <img src="imgs/pizzas.png" alt="Pizzas" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

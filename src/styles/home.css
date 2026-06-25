@@ -1,0 +1,127 @@
+#home {
+  display: flex;
+}
+
+#cta {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  gap: 1rem;
+  width: 50%;
+}
+
+#title {
+  font-size: 3rem;
+}
+
+#title span {
+  color: #bf212e;
+}
+
+#ctaBtns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#ctaBtns a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#phoneButton {
+  gap: 0.5rem;
+  font-size: 600;
+  padding: 0.5rem 1rem;
+  font-size: small;
+  font-weight: 550;
+  border: none;
+  background-color: #d8d8d8;
+  border-radius: 0.3rem;
+  box-shadow: -1px -1px 3px #11111154;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#phoneButton a {
+  color: #322e2d;
+  display: flex;
+}
+
+#phoneButton i {
+  color: #bf212e;
+}
+
+#socialMediaButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+#socialMediaButtons a {
+  text-decoration: none;
+  background-color: #cccccc;
+  border-radius: 0.3rem;
+  box-shadow: -1px -1px 3px #11111154;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#socialMediaButtons a:hover {
+  box-shadow: 0px 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+#socialMediaButtons i {
+  color: #322e2d;
+}
+
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+}
+
+#banner img {
+  z-index: 1;
+  height: 100%;
+  width: fit-content;
+}
+
+#shape {
+  background-color: #bf212e;
+  width: 100%;
+  height: calc(100% + 10rem);
+  position: absolute;
+  top: -5.5rem;
+  right: 0;
+  border-radius: 40% 30% 0% 20%;
+}
+
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0;
+  }
+
+  #banner {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  #cta #defaultButton {
+    display: block;
+  }
+}

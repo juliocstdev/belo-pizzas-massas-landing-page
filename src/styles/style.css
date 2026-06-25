@@ -10,3 +10,12 @@
 body {
     background-color: #F2F2F2;
 }
+
+#defaultButton {
+    transition: .5s;
+}
+
+#defaultButton:hover {
+    background-color: #ffffff;
+    color: #bf212e;
+}
