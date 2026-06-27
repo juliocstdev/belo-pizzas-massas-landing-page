@@ -1,0 +1,130 @@
+#cardapio {
+  margin-top: 13rem;
+  text-align: center;
+}
+
+#cardapio h2 {
+  margin-bottom: 2rem;
+}
+
+#span {
+  color: #bf212e;
+}
+
+#cardapio img {
+  width: 8rem;
+  height: 8rem;
+}
+
+#pratos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+
+.prato {
+  height: 25rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #bf212e;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.heart {
+  display: flex;
+  border-radius: 0% 0% 0% 50%;
+  background-color: rgb(238, 238, 76);
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  bottom: 22rem;
+  left: 15.5rem;
+  cursor: pointer;
+}
+
+.heart i {
+  position: absolute;
+  top: 1.8rem;
+  left: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars i {
+  color: rgb(238, 238, 76);
+}
+
+.rateVolume {
+  padding: 0.5rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price p {
+  font-weight: 600;
+}
+
+.defaultButton {
+  padding: 0.4rem 0.6rem;
+  font-size: small;
+  font-weight: 550;
+  border: none;
+  background-color: rgb(238, 238, 76);
+  border-radius: 0.3rem;
+  color: #000000;
+  box-shadow: 1px 1px 10px #11111154;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: 0.5s;
+}
+
+.defaultButton:hover {
+  background-color: #000000;
+  color: rgb(238, 238, 76);
+}
+
+@media screen and (max-width: 1170px) {
+  #pratos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prato {
+    width: calc(50% - 1rem);
+  }
+
+  .heart {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .prato {
+    width: 100%;
+  }
+
+  #cardapio h2,
+  #span {
+    align-items: center;
+  }
+}
