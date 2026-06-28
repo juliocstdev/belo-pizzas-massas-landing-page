@@ -1,5 +1,6 @@
 #cardapio {
   margin-top: 13rem;
+  margin-bottom: 10rem;
   text-align: center;
 }
 
@@ -104,6 +105,10 @@
 }
 
 @media screen and (max-width: 1170px) {
+  #cardapio {
+    margin-bottom: 5rem;
+  }
+
   #pratos {
     flex-wrap: wrap;
     justify-content: center;
