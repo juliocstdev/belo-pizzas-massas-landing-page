@@ -1,17 +1,26 @@
 header {
   min-width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem 2rem;
+  padding: 0 2rem;
+  margin: 1.5rem 0 0;
   align-items: center;
+  background-color: var(--terciaria);
+}
+
+#imgNav {
+  cursor: pointer;
 }
 
 #mobileNavigationLinks,
 #mobileDefaultButton,
-#hamburguer { 
+#hamburguer {
   display: none;
 }
 
@@ -27,7 +36,7 @@ header {
 }
 
 #navigationLinks .link:first-child {
-  border-bottom: 2px solid #bf212e;
+  border-bottom: 2px solid var(--primaria);
   border-radius: 1px;
 }
 
@@ -36,9 +45,9 @@ header {
   font-size: small;
   font-weight: 550;
   border: none;
-  background-color: #bf212e;
+  background-color: var(--primaria);
   border-radius: 0.3rem;
-  color: #fff;
+  color: var(--branco);
   box-shadow: -1px -1px 3px #11111154;
   cursor: pointer;
   margin-right: 1rem;
@@ -47,37 +56,11 @@ header {
 #menuMobile {
   display: flex;
   flex-direction: column;
-  margin: 0 0 3rem;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
   gap: 2rem;
   align-items: center;
-}
-
-#mobileNavigationLinks.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  list-style: none;
-  gap: 0.7rem;
-}
-
-#mobileNavigationLinks.active li a {
-  text-decoration: none;
-  color: #322e2d;
-}
-
-#mobileDefaultButton.active {
-  display: block;
-  padding: 0.5rem 1rem;
-  font-size: small;
-  font-weight: 550;
-  border: none;
-  background-color: #bf212e;
-  border-radius: 0.3rem;
-  color: #fff;
-  box-shadow: -1px -1px 3px #11111154;
-  cursor: pointer;
+  background-color: var(--terciaria);
 }
 
 @media screen and (max-width: 1170px) {
@@ -94,5 +77,39 @@ header {
     font-weight: bold;
     color: #322e2d;
     cursor: pointer;
+  }
+
+  #mobileNavigationLinks.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    gap: 0.7rem;
+  }
+
+  #mobileNavigationLinks.active li a {
+    text-decoration: none;
+    color: #322e2d;
+  }
+
+  #mobileDefaultButton.active {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: small;
+    font-weight: 550;
+    border: none;
+    background-color: var(--primaria);
+    border-radius: 0.3rem;
+    color: var(--branco);
+    box-shadow: -1px -1px 3px #11111154;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #mobileDefaultButton.active:hover {
+    background-color: var(--branco);
+    color: var(--primaria);
   }
 }

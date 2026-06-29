@@ -1,6 +1,6 @@
 #home {
   display: flex;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 #cta {
@@ -16,7 +16,7 @@
 }
 
 #title span {
-  color: #bf212e;
+  color: var(--primaria);
 }
 
 #ctaBtns {
@@ -26,7 +26,7 @@
 }
 
 #ctaBtns a {
-  color: #ffffff;
+  color: var(--branco);
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@
 }
 
 #phoneButton i {
-  color: #bf212e;
+  color: var(--primaria);
 }
 
 #socialMediaButtons {
@@ -94,17 +94,17 @@
   z-index: 1;
   height: 100%;
   width: fit-content;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 #shape {
-  background-color: #bf212e;
+  background-color: var(--primaria);
   width: 100%;
-  height: calc(100% + 10rem);
+  height: calc(100% + 5rem);
   position: absolute;
-  top: -5.5rem;
+  top: 0;
   right: 0;
-  border-radius: 40% 30% 0% 20%; 
+  border-radius: 40% 30% 0% 20%;
 }
 
 @media screen and (max-width: 1170px) {

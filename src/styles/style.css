@@ -1,21 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(header.css);
+@import url(home.css);
+@import url(menu.css);
+@import url(depo.css);
+@import url(footer.css);
+
+:root {
+  --primaria: #bf212e;
+  --secundaria: rgb(238, 238, 76);
+  --terciaria: #f2f2f2;
+  --branco: #fff;
+}
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #F2F2F2;
+  background-color: var(--terciaria);
 }
 
 #defaultButton {
-    transition: .5s;
+  transition: 0.5s;
 }
 
 #defaultButton:hover {
-    background-color: #ffffff;
-    color: #bf212e;
+  background-color: var(--branco);
+  color: var(--primaria);
 }

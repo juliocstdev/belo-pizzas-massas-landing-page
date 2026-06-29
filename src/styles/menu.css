@@ -9,7 +9,7 @@
 }
 
 #span {
-  color: #bf212e;
+  color: var(--primaria);
 }
 
 #cardapio img {
@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #bf212e;
+  background-color: var(--primaria);
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
@@ -42,7 +42,7 @@
 .heart {
   display: flex;
   border-radius: 0% 0% 0% 50%;
-  background-color: rgb(238, 238, 76);
+  background-color: var(--secundaria);
   width: 4rem;
   height: 4rem;
   overflow: hidden;
@@ -57,7 +57,7 @@
   position: absolute;
   top: 1.8rem;
   left: 1rem;
-  color: #fff;
+  color: var(--branco);
   font-size: 1.3rem;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .stars i {
-  color: rgb(238, 238, 76);
+  color: var(--secundaria);
 }
 
 .rateVolume {
@@ -90,22 +90,22 @@
   font-size: small;
   font-weight: 550;
   border: none;
-  background-color: rgb(238, 238, 76);
+  background-color: var(--secundaria);
   border-radius: 0.3rem;
   color: #000000;
   box-shadow: 1px 1px 10px #11111154;
   cursor: pointer;
-  margin-right: 1rem;
   transition: 0.5s;
 }
 
 .defaultButton:hover {
   background-color: #000000;
-  color: rgb(238, 238, 76);
+  color: var(--secundaria);
 }
 
 @media screen and (max-width: 1170px) {
   #cardapio {
+    margin-top: 5rem;
     margin-bottom: 5rem;
   }
 
