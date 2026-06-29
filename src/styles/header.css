@@ -35,7 +35,7 @@ header {
   color: #322e2d;
 }
 
-#navigationLinks .link:first-child {
+#navigationLinks .link.bar {
   border-bottom: 2px solid var(--primaria);
   border-radius: 1px;
 }
